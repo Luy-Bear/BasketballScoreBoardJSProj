@@ -1,0 +1,42 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.containerContent{
+    background-color: red;
+    display:flex;
+    min-height: 80vh;
+    min-width: 80vw;
+    justify-content: center;
+}
+
+.TeamDiv{
+    flex: 1;
+
+    margin: 2vh;
+    background-color: rgba(0, 0, 255, 0.541);
+    display: grid;
+    justify-items: center;
+    align-items: center; /*Vertical Centering */
+}
+
+.PointButtonsDiv{
+    margin: 2vh;
+    background-color: rgba(94, 255, 0, 0.541);
+}
+
+.FoulButtonDiv{
+    display: flex;
+    justify-content: center;
+}
+
+div{
+    border: 2px solid black;
+}
+
+.TeamTitle{}
+
+.PointsP{}
