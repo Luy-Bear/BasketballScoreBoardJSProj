@@ -1,5 +1,3 @@
-<!-- REDO SO INSTEAD OF DOING ROWS YOU DO COLUMNS - MAKES 3RD GAME INFO COLUIMN EASIER TOO -->
-
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
@@ -8,9 +6,14 @@
         <div class="containerContent">
             <div class="TeamDiv" id="HomeTeamDiv">
                 <p class="TeamTitle" id="HomeTitle">Home</p>
-                <p class="PointsP" id="HomePoints">0</p>
+
+                <div class="PointsAndFoulDiv">
+                    <p class="PointsP" id="HomePoints">0</p>
+                    <p class="FoulP" id="HomeFouls">0</p>
+                </div>
                 
-                <div class="PointButtonsDiv">
+                
+                <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
                         <button>+1</button>
                         <button>+2</button>
@@ -21,13 +24,19 @@
                     </div>
                 </div>
             </div>
+
                 <!-- game data goes here -->
+            
+                
             <div class="TeamDiv" id="GuestTeamDiv">
                 <p class="TeamTitle" id="GuestTitle">Guest</p>
 
-                <p class="PointsP" id="GuestPoints">0</p>
-                
-                <div class="PointButtonsDiv">
+                <div class="PointsAndFoulDiv">
+                    <p class="PointsP" id="GuestPoints">0</p>
+                    <p class="FoulP" id="GuestFouls">0</p>
+                </div>
+                                
+                <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
                         <button>+1</button>
                         <button>+2</button>
