@@ -9,10 +9,12 @@ body{
     align-items: center;
     margin: 0;
 }
-p{
+
+.TeamDiv p{
     margin:0;
-    text-shadow: 4px 4px black;
+    text-shadow: .3vw .3vw black;
 }
+
 
 .containerContent{
     /* background-color: red; */
@@ -21,11 +23,12 @@ p{
     min-height: 80vh;
     min-width: 80vw;
     justify-content: center;
+        
+    
 }
 
 .TeamDiv{
     flex: 1;
-    margin: 2vh;
     display: grid;
     gap: 5vh;
     justify-items: center;
@@ -79,7 +82,7 @@ p{
     font-weight:700;
     font-size: 1.9vh;
 
-    box-shadow: rgb(24, 24, 24) 3px 3px ;
+    box-shadow: rgb(24, 24, 24) .15vw .15vw ;
 }
 
 
@@ -113,7 +116,6 @@ div{
     font-weight: 900;
     color: white;
     font-family: DigitalClock, monospace;
-    text-shadow: black;
 }
 
 .FoulP{
@@ -136,6 +138,84 @@ div{
     align-content: center;
     /* overflow: hidden; ????*/
 }
+
+.GameInfoDiv{
+    flex:1;
+    min-height: 100%;
+    max-width: 30%;
+    background-color: rgba(0, 0, 0, 0.377);
+    height:50vh;
+    align-self: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#WinningMarkerDiv{
+    display:flex;
+    align-items: center;
+}
+
+.MarkWinEl{
+    padding: 1vw;
+}
+
+.GameInfoDiv>button{
+    display: inline-flex;
+    justify-self: center;
+}
+
+.GameInfoDiv p{
+    font-family: DigitalClock, monospace;
+    font-size: 4vh;
+    color: white;
+}
+
+.GameInfoDiv button{
+    height: auto;
+    width: auto;
+    text-align: center;
+
+    /* padding-right: 1vw;
+    padding-left: 1vw; */
+
+    font-weight: 800;
+    font-size:  clamp(0.5rem, 1vw, 0.8rem);
+    
+    white-space: nowrap;
+    border-radius: .6vw;
+
+    
+}
+
+#GameInfoButtonDivs{
+    display: flex;
+    flex:1;
+    gap: .5vw;
+    width: 100%;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .court {

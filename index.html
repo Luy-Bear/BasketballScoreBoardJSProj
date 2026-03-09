@@ -36,9 +36,6 @@
             <div class="court-corner-line court-corner-right-bottom"></div>
         </div>
 
-
-
-
         <div class="containerContent">
             <div class="TeamDiv" id="HomeTeamDiv">
                 <p class="TeamTitle" id="HomeTitle">Home</p>
@@ -62,11 +59,27 @@
             </div>
 
                 <!-- game data goes here -->
-            
+            <div class="GameInfoDiv" id="GameInfoDiv">
+                <!-- timer -->
+                <p class="GameInfoP" id="Timer">00:00</p>
+                <!-- period -->
+                <p class="GameInfoP" id="Period">0/4</p>
+                <!-- "winning" instead of possesion (two lights either side) -->
+                <div class="" id="WinningMarkerDiv">
+                    <div class="MarkWinEl" id="HomeLight"><p>()</p></div>
+                    <p class="MarkWinEl" id="WinningMarkerPara">Winning</p>
+                    <div class="MarkWinEl" id="GuestLight"><p>(■)</p></div>
+                </div>
+                <div id="GameInfoButtonDivs">
+                    <!-- reset button -->
+                    <button>Reset Game</button>
+                    <!-- next period -->
+                    <button>Next Period</button>
+                </div>
+            </div>
                 
             <div class="TeamDiv" id="GuestTeamDiv">
                 <p class="TeamTitle" id="GuestTitle">Guest</p>
-
                 <div class="PointsAndFoulDiv">
                     <p class="PointsP" id="GuestPoints">0</p>
                     <p class="FoulP" id="GuestFouls">0</p>
