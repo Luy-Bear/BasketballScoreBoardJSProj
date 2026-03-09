@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
         <div class="containerContent">
@@ -15,12 +16,12 @@
                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button>+1</button>
-                        <button>+2</button>
-                        <button>+3</button>
+                        <button onclick="AddToPoints(1,'home')">+1</button>
+                        <button onclick="AddToPoints(2,'home')">+2</button>
+                        <button onclick="AddToPoints(3,'home')">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
-                        <button>Foul</button>
+                        <button onclick="AddToFouls('home')">Foul</button>
                     </div>
                 </div>
             </div>
@@ -38,12 +39,12 @@
                                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button>+1</button>
-                        <button>+2</button>
-                        <button>+3</button>
+                        <button onclick="AddToPoints(1,'guest')">+1</button>
+                        <button onclick="AddToPoints(2,'guest')">+2</button>
+                        <button onclick="AddToPoints(3,'guest')">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
-                        <button>Foul</button>
+                        <button onclick="AddToFouls('guest')">Foul</button>
                     </div>
                 </div>
             </div>
