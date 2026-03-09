@@ -11,10 +11,12 @@ body{
 }
 p{
     margin:0;
+    text-shadow: 4px 4px black;
 }
 
 .containerContent{
-    background-color: red;
+    /* background-color: red; */
+    /* background-image:; */
     display:flex;
     min-height: 80vh;
     min-width: 80vw;
@@ -24,7 +26,6 @@ p{
 .TeamDiv{
     flex: 1;
     margin: 2vh;
-    background-color: rgba(0, 0, 255, 0.541);
     display: grid;
     gap: 5vh;
     justify-items: center;
@@ -34,11 +35,20 @@ p{
     /* padding: 2vh; */
 }
 
+#HomeTeamDiv{
+    background-color: rgba(179, 32, 32, 0.582);
+}
+#GuestTeamDiv{
+    background-color: rgba(43, 41, 187, 0.753);
+}
+
 .ButtonsDiv{
+
+    /* background-color: rgba(94, 255, 0, 0.541); */
+
     width: fit-content;
     min-width: 40%;
     min-height: 13vh;
-    background-color: rgba(94, 255, 0, 0.541);
     justify-items: center;
     align-content: center;
 
@@ -128,3 +138,147 @@ div{
 }
 
 
+.court {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.court {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #c8852a;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.grain {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.court-centre-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.court-centre-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.court-centre-dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.court-paint {
+    position: absolute;
+    width: 120px;
+    height: 160px;
+    border: 2px solid #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.court-paint-left  { left: 0; }
+.court-paint-right { right: 0; }
+
+.court-ft-circle {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+}
+
+.court-ft-circle-left  { left: 80px;  transform: translate(-50%, -50%); }
+.court-ft-circle-right { right: 80px; transform: translate(50%, -50%); }
+
+.court-backboard {
+    position: absolute;
+    width: 2px;
+    height: 40px;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.court-backboard-left  { left: 14px; }
+.court-backboard-right { right: 14px; }
+
+.court-basket {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.court-basket-left  { left: 20px; }
+.court-basket-right { right: 20px; }
+
+.court-restricted-arc {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.court-restricted-arc-left  { left: 4px; }
+.court-restricted-arc-right { right: 4px; }
+
+.court-three-point {
+    position: absolute;
+    width: 200px;
+    height: 260px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.court-three-point-left  { left: -80px; }
+.court-three-point-right { right: -80px; }
+
+.court-corner-line {
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background: #fff;
+}
+
+.court-corner-left-top    { left: 0;  top: calc(50% - 130px); }
+.court-corner-left-bottom { left: 0;  top: calc(50% + 128px); }
+.court-corner-right-top   { right: 0; top: calc(50% - 130px); }
+.court-corner-right-bottom{ right: 0; top: calc(50% + 128px); }
