@@ -1,4 +1,4 @@
-const PeriodTimerConst = 5 //720
+const PeriodTimerConst = 7 //720
 
 let homePoints = 0;
 let guestPoints = 0;
@@ -15,7 +15,9 @@ let gameOver = 0
 
 let intervalId = 0
 
-alert("The period timer in the NBA is normally set to 12 minutes, but for testing and show casing purposes I have set it to 10 seconds so you can test buttons and also program states")
+alert("The period timer in the NBA is normally set to 12 minutes, but for testing and show casing purposes I have set it to 7 seconds so you can test buttons and also program states")
+
+timerEl.textContent = ConvertSecsToTimer()
 
 function ConvertSecsToTimer(){
     //rounds timer/60 down to get minds remaining, gets remainder as seconds, pads with 0s for 2 chars length total 

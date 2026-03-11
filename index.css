@@ -45,50 +45,6 @@ body{
     background-color: rgba(43, 41, 187, 0.753);
 }
 
-.ButtonsDiv{
-
-    /* background-color: rgba(94, 255, 0, 0.541); */
-
-    width: fit-content;
-    min-width: 40%;
-    min-height: 13vh;
-    justify-items: center;
-    align-content: center;
-
-    display: flex;
-    flex-direction: column;
-    gap: .7vh
-    
-}
-
-.AddPointsDiv{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    gap: clamp(4px, .5vw, 6px);    
-}
-
-.FoulButtonDiv{
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-}
-
-.ButtonsDiv>div>button{
-    flex: 1;
-    border: 0px;
-    border-radius: .3rem;
-    font-weight:700;
-    font-size: 1.9vh;
-
-    box-shadow: rgb(24, 24, 24) .15vw .15vw ;
-}
-
-
-div{
-    /* border: 1px solid black; */
-}
 
 .TeamTitle{
     display: flex;
@@ -139,52 +95,112 @@ div{
     /* overflow: hidden; ????*/
 }
 
+
+div{
+    /* border: 1px solid black; */
+}
+
+
 .GameInfoDiv{
     flex:1;
     min-height: 100%;
     max-width: 30%;
-    background-color: rgba(0, 0, 0, 0.377);
+    background-color: rgba(0, 0, 0, 0.788);
     height:50vh;
     align-self: center;
     display:flex;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    gap: 2vh;
+}
+
+.GameInfoDiv *{
+    margin: 0;
+}
+
+
+.ButtonsDiv{
+
+    /* background-color: rgba(94, 255, 0, 0.541); */
+
+    width: fit-content;
+    min-width: 40%;
+    min-height: 13vh;
+    justify-items: center;
+    align-content: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: .7vh
+    
+}
+
+.AddPointsDiv{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    gap: clamp(4px, .5vw, 6px);    
+}
+
+.FoulButtonDiv{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.ButtonsDiv>div>button{
+    flex: 1;
+    border: 0px;
+    border-radius: .3rem;
+    font-weight:700;
+    font-size: 1.9vh;
+
+    box-shadow: rgb(24, 24, 24) .15vw .15vw ;
 }
 
 
 #WinningMarkerDiv{
     display:flex;
     align-items: center;
+    width: 95%
 }
 
 .MarkWinEl{
     padding: 1vw;
 }
 
-.GameInfoDiv>button{
-    display: inline-flex;
-    justify-self: center;
-}
-
 .GameInfoDiv p{
     font-family: DigitalClock, monospace;
-    font-size: 4vh;
+    font-size: 6vh;
     color: white;
 }
 
-.GameInfoDiv button{
-    height: auto;
-    width: auto;
-    text-align: center;
+#Timer{
+    margin-top: 6vh;
+}
 
-    /* padding-right: 1vw;
-    padding-left: 1vw; */
+#Period{
+    color: rgb(29, 197, 29);
+}
+
+/* #GuestLight{
+    color: rgb(78, 76, 173);
+}
+#HomeLight{
+    color: red;
+} */
+
+.GameInfoDiv button{
+    height: 70%;
+    width: 45%;
+    text-align: center;
 
     font-weight: 800;
     font-size:  clamp(0.5rem, 1vw, 0.8rem);
-    
-    white-space: nowrap;
+     
+    /*white-space: nowrap; */
     border-radius: .6vw;
 
     
@@ -193,11 +209,25 @@ div{
 #GameInfoButtonDivs{
     display: flex;
     flex:1;
-    gap: .5vw;
     width: 100%;
     justify-content: center;
+
+    align-items: center;
+    gap: 4%;
 }
 
+
+.GameInfoP{
+    background-color: rgba(22, 21, 21, 0.884);
+    min-width: 60%;
+    min-height: 7vh;
+
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+
+    border: .7vh inset black
+}
 
 
 
