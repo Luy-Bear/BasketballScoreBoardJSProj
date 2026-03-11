@@ -35,6 +35,27 @@ function TimerDec(){
 }
 
 function UpdateWinningMarker(){
+    //Gets the HomePoints from string ele, converts to int, adds to gomeFouls taken as string converted to int
+    let HomeTotScore = parseInt(document.getElementById("HomePoints").textContent) + parseInt(document.getElementById("HomeFouls").textContent)
+    
+    //Gets the HomePoints from string ele, converts to int, adds to gomeFouls taken as string converted to int
+    let GuestTotScore = parseInt(document.getElementById("GuestPoints").textContent) + parseInt(document.getElementById("GuestFouls").textContent)
+    
+    //If home winning, change winning marker light to show Home only
+    if(HomeTotScore > GuestTotScore){
+        document.getElementById("HomeLight").textContent = "(■)"
+        document.getElementById("GuestLight").textContent = "()"
+    }
+    //If guest winning, change winning marker light to show Guest only
+    else if(HomeTotScore < GuestTotScore){
+        document.getElementById("HomeLight").textContent = "()"
+        document.getElementById("GuestLight").textContent = "(■)"
+    }
+    //Or if drawing show both on
+    else{
+        document.getElementById("HomeLight").textContent = "(■)"
+        document.getElementById("GuestLight").textContent = "(■)"
+    }
 
 }
 
