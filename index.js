@@ -40,19 +40,20 @@ function UpdateWinningMarker(){
 
 function startGame(){
     periodOver = 0
-    timerSec = 720
+    timerSec = 5 //720
     
     setInterval(TimerDec, 1000)    
 
     //change HTML elems
     let startBtnEl = document.getElementById("StartPauseBtn")
     startBtnEl.onclick= pauseFn
+    startBtnEl.textContent = "Pause Timer"
 
 }
 
 function pauseFn(){
-    alert("BOB")
-    periodOver = 0
+    periodOver ? periodOver = 0 : periodOver = 1
+    if(!timerSec){timerSec = 5} //720
 }
 
 function periodOverFn(){
@@ -60,6 +61,9 @@ function periodOverFn(){
     period++
     let periodCounter = document.getElementById("Period")
     periodCounter.textContent = period+"/4"
+
+    let startBtnEl = document.getElementById("StartPauseBtn")
+    startBtnEl.textContent = "Start Next Period"
 }
 
 function GameEnd(){
