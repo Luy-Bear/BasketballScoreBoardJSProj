@@ -4,24 +4,22 @@ let guestPoints = 0;
 let homeFouls = 0;
 let guestFouls = 0;
 
-let period = 0;
+let period = 1;
 let timerSec = 4 //720
 let timerEl = document.getElementById("Timer")
 
 let periodOver = 1
 let gameOver = 0
 
-setInterval(TimerDec, 1000)
-
 function ConvertSecsToTimer(){
-    let result = Math.trunc(timerSec/60)+":"+(timerSec%60)
+    //rounds timer/60 down to get minds remaining, gets remainder as seconds, pads with 0s for 2 chars length total 
+    let result = (Math.trunc(timerSec/60)).toString().padStart(2,"0")+":"+(timerSec%60).toString().padStart(2,"0")
     return result
 }
 
 function TimerDec(){
     console.log("In Timer fn")
     if((periodOver || gameOver) != true){
-        console.log("Oops")
         timerSec--
         timerEl.textContent = ConvertSecsToTimer()
 
@@ -29,23 +27,32 @@ function TimerDec(){
             if(period == 4){ //check if last period
                 GameEnd()
                 return
-            }
+            }`1`
             periodOverFn() 
         }
         UpdateWinningMarker()
     }
-   
-
-
 }
+
 function UpdateWinningMarker(){
 
 }
 
-function unPause(){
+function startGame(){
     periodOver = 0
-    timerSec = 5 //720
+    timerSec = 720
+    
+    setInterval(TimerDec, 1000)    
+
     //change HTML elems
+    let startBtnEl = document.getElementById("StartPauseBtn")
+    startBtnEl.onclick= pauseFn
+
+}
+
+function pauseFn(){
+    alert("BOB")
+    periodOver = 0
 }
 
 function periodOverFn(){
