@@ -1,7 +1,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="index.css">
-        <script src="index.js"></script>
     </head>
     <body>
          <!-- Basketball Court Background -->
@@ -48,9 +47,9 @@
                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button onclick="AddToPoints(1,'home')">+1</button>
-                        <button onclick="AddToPoints(2,'home')">+2</button>
-                        <button onclick="AddToPoints(3,'home')">+3</button>
+                        <button onclick="AddToPoints(1,'home')" id="addOneHome">+1</button>
+                        <button onclick="AddToPoints(2,'home')"  id="addTwoHome">+2</button>
+                        <button onclick="AddToPoints(3,'home')" id="addThreeHome">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
                         <button onclick="AddToFouls('home')">Foul</button>
@@ -74,7 +73,7 @@
                     <!-- reset button -->
                     <button>Reset Game</button>
                     <!-- next period -->
-                    <button>Next Period</button>
+                    <button onclick="unPause()">Start</button>
                 </div>
             </div>
                 
@@ -87,9 +86,9 @@
                                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button onclick="AddToPoints(1,'guest')">+1</button>
-                        <button onclick="AddToPoints(2,'guest')">+2</button>
-                        <button onclick="AddToPoints(3,'guest')">+3</button>
+                        <button onclick="AddToPoints(1,'guest')" id="addOneGuest">+1</button>
+                        <button onclick="AddToPoints(2,'guest')" id="addTwoGuest">+2</button>
+                        <button onclick="AddToPoints(3,'guest')" id="addThreeGuest">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
                         <button onclick="AddToFouls('guest')">Foul</button>
@@ -99,5 +98,7 @@
 
             
         </div>
+        
+    <script src="index.js"></script>
     </body>
 </html>
