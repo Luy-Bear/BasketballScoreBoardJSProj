@@ -47,12 +47,12 @@
                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button onclick="AddToPoints(1,'home')" id="addOneHome">+1</button>
-                        <button onclick="AddToPoints(2,'home')"  id="addTwoHome">+2</button>
-                        <button onclick="AddToPoints(3,'home')" id="addThreeHome">+3</button>
+                        <button onclick="" id="addOneHome">+1</button>
+                        <button onclick=""  id="addTwoHome">+2</button>
+                        <button onclick="" id="addThreeHome">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
-                        <button onclick="AddToFouls('home')">Foul</button>
+                        <button id = "HomeFoulbtn" onclick="">Foul</button>
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
                 <!-- game data goes here -->
             <div class="GameInfoDiv" id="GameInfoDiv">
                 <!-- timer -->
-                <p class="GameInfoP" id="Timer">12:00</p>
+                <p class="GameInfoP" id="Timer">00:05</p>
                 <!-- period -->
                 <p class="GameInfoP" id="Period">1/4</p>
                 <!-- "winning" instead of possesion (two lights either side) -->
@@ -71,7 +71,7 @@
                 </div>
                 <div id="GameInfoButtonDivs">
                     <!-- reset button -->
-                    <button>Reset Game</button>
+                    <button onclick="resetGame()">Reset Game</button>
                     <!-- next period -->
                     <button onclick="startGame()" id="StartPauseBtn">Start</button>
                 </div>
@@ -86,12 +86,12 @@
                                 
                 <div class="ButtonsDiv">
                     <div class="AddPointsDiv">
-                        <button onclick="AddToPoints(1,'guest')" id="addOneGuest">+1</button>
-                        <button onclick="AddToPoints(2,'guest')" id="addTwoGuest">+2</button>
-                        <button onclick="AddToPoints(3,'guest')" id="addThreeGuest">+3</button>
+                        <button onclick="" id="addOneGuest">+1</button>
+                        <button onclick="" id="addTwoGuest">+2</button>
+                        <button onclick="" id="addThreeGuest">+3</button>
                     </div>
                     <div class="FoulButtonDiv">
-                        <button onclick="AddToFouls('guest')">Foul</button>
+                        <button id = "GuestFoulbtn" onclick="">Foul</button>
                     </div>
                 </div>
             </div>
